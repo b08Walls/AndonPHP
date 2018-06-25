@@ -39,7 +39,7 @@ mysqli_query($conn,$qry);
 $id_insert = mysqli_insert_id($conn);
 
 
-echo "{\"htid\":\"$htid\",\"ID_REGISTRO\":\"$id_insert\"}"
+echo "{\"htid\":\"$htid\",\"ID_REGISTRO\":\"$id_insert\",\"LINEA\":\"$pLinea\",\"ESTACION\":\"$pEstacion\"}"
 
 
 

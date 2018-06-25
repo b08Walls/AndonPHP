@@ -1,6 +1,6 @@
 <?php
 
-/*$servername = "localhost";
+/*$name = "localhost";
 $username = "octaviop_phpAndo";
 $password = "5328bobi94";
 $dbname = "mydb";
@@ -24,6 +24,14 @@ if(isset($_REQUEST["htid"]))
 if(isset($_REQUEST["condicion"])&&isset($_REQUEST["DB"])&&isset($_REQUEST["htid"]))
 {
 	getDataBaseInJSON($DB,$_REQUEST['condicion'],$_REQUEST['htid']);
+}
+elseif(isset($_REQUEST["DB"]) && isset($_REQUEST["htid"]))
+{
+	getDataBaseInJSON($DB,"GENERAL",$_REQUEST['htid']);
+}
+else
+{
+	echo "get requiere condicion, DB y htid";
 }
 
 $tipo_qry = "D";

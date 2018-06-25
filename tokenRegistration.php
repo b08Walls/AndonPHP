@@ -1,6 +1,6 @@
 <?php
 
-$servername = "localhost";
+	$servername = "localhost";
 	$username = "android";
 	$password = "53285328";
 	$dbname = "andon";
@@ -30,7 +30,7 @@ if(isset($_REQUEST["MAC_ADDRESS"]))
 		{
 			$qry = "UPDATE TEAM_LEADERS SET TOKEN = $pToken WHERE MAC_ADDRESS=$pMacAddress";
 			mysqli_query($conn,$qry);
-		}	
+		}
 	}
 
 	if(isset($_REQUEST["LINEA"]))
